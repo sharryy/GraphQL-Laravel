@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 return [
     // The prefix for routes
@@ -102,13 +102,19 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // ExampleQuery::class,
+                'book' => App\GraphQL\Queries\BookQuery::class,
+                'books' => App\GraphQL\Queries\BooksListQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                // Create a book
+                'createBook' => App\GraphQL\Mutations\CreateBookMutation::class,
+                // update book
+                'updateBook' => App\GraphQL\Mutations\UpdateBookMutation::class,
+                // delete a book
+                'deleteBook' => App\GraphQL\Mutations\DeleteBookMutation::class,
             ],
             'types' => [
-                // ExampleType::class,
+                'Book' => App\GraphQL\Types\BookType::class,
             ],
             'middleware' => [],
             'method' => ['get', 'post'],
