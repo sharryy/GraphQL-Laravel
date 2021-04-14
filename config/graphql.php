@@ -121,15 +121,6 @@ return [
         ],
     ],
 
-    // The types available in the application. You can then access it from the
-    // facade like this: GraphQL::type('user')
-    //
-    // Example:
-    //
-    // 'types' => [
-    //     App\GraphQL\Type\UserType::class
-    // ]
-    //
     'types' => [
         // ExampleType::class,
         // ExampleRelationType::class,
