@@ -9,7 +9,7 @@ use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\Query;
 
 
-class BookQuery
+class BookQuery extends Query
 {
     protected $attributes = [
         'name' => 'book',
